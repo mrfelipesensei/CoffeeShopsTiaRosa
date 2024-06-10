@@ -25,12 +25,12 @@
                     <li><a href="#">Contato</a></li>
                     <li>
                         <a href="#">
-                            <img src="./img/icons8-twitterx-100.png" alt="" width="40px">
+                            <img src="./img/icons8-twitterx-100.png" alt="" width="40px" id="img">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./img/icons8-instagram-100.png" alt="" width="40px">
+                            <img src="./img/icons8-instagram-100.png" alt="" width="40px" id="img2">
                         </a>
                     </li>
                 </ul>
@@ -46,3 +46,22 @@
 
 </footer>
 </html>
+<script>
+    //Mundança das logos das redes sociais
+    document.querySelector('.main_header_content_menu #img').addEventListener('mouseover', function() {
+        this.src = '/img/icons8-twitterx-ylw.png';
+    });
+
+    document.querySelector('.main_header_content_menu #img').addEventListener('mouseout', function() {
+        this.src = '/img/icons8-twitterx-100.png';
+    });
+
+    document.querySelector('.main_header_content_menu #img2').addEventListener('mouseover', function() {
+        this.src = '/img/icons8-instagram-ylw.png';
+    });
+
+    document.querySelector('.main_header_content_menu #img2').addEventListener('mouseout', function() {
+        this.src = '/img/icons8-instagram-100.png';
+    });
+
+</script>

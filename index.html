@@ -39,7 +39,15 @@
     </header>
     <!--Fim Cabeçalho-->
     <main>
-
+    <!--1º Dobra-->
+    <div class="carousel">
+        <img src="./img/barista.jpg" class="active" alt="Slide 1">
+        <img src="./img/clients.jpg" alt="Slide 2">
+        <img src="./img/Design sem nome.jpg" alt="Slide 3">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <!--Fim 1ª Dobra-->
     </main>
 </body>
 <footer>
@@ -64,4 +72,29 @@
         this.src = '/img/icons8-instagram-100.png';
     });
 
+    //Lógica do carrossel 
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 5000); // Mude o slide a cada 5 segundos
 </script>

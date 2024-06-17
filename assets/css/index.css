@@ -103,3 +103,51 @@
     right: 10px;
 }
 /*Fim 1ª Dobra*/
+.bebidas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.bebidas article{
+    margin-left: 1px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px dashed #2d4059;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.bebidas h3{
+    font-size: 30px;
+    color: #2d4059;
+    padding-bottom: 5px;
+    transition: 0.4s all;
+}
+.bebidas h3:hover{
+    font-size: 32px;
+    color: #2d4059;
+}
+.bebidas p{
+    font-size: 17px;
+}
+.article_icons {
+    margin: 0 auto; /* Centraliza os ícones horizontalmente */
+}
+.article_imgs{
+    display: flex;
+    background-color: white;
+    width: 95%;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+.article_imgs:hover{
+    width: 100%;
+}

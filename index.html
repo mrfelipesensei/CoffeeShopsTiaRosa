@@ -39,15 +39,73 @@
     </header>
     <!--Fim Cabeçalho-->
     <main>
-    <!--1º Dobra-->
-    <div class="carousel">
-        <img src="./img/barista.jpg" class="active" alt="Slide 1">
-        <img src="./img/clients.jpg" alt="Slide 2">
-        <img src="./img/Design sem nome.jpg" alt="Slide 3">
-        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
-    </div>
-    <!--Fim 1ª Dobra-->
+        <!--1º Dobra-->
+        <div class="carousel">
+            <img src="./img/barista.jpg" class="active" alt="Slide 1">
+            <img src="./img/clients.jpg" alt="Slide 2">
+            <img src="./img/Design sem nome.jpg" alt="Slide 3">
+            <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+            <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <!--Fim 1ª Dobra-->
+        <section>
+            <header>
+                <h1>COFFE SHOPS TIA ROSA</h1>
+                <h2>Café: a poesia líquida de todos os momentos</h2>
+                <p>Experimente nossas blends e bebidas exclusivas</p>
+            </header>
+            <br>
+            <div class="bebidas">
+                <article>
+                    <!-- <img src="./img/icons8-iced-coffee-100.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Revolution Ice Tea</h3>
+                    <img src="./img/revolution_icedtea.jpeg" alt="" width="300px" class="article_imgs">
+                    <p>Uma fusão refrescante de sabores exóticos que dançam na língua com cada gole. 
+                        É uma revolta de prazer em cada copo, uma bebida que desafia o comum e celebra o extraordinário.
+                    </p>
+                </article>
+                <article>
+                    <!-- <img src="./img/icons8-hot-coffee-64.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Help Me Espresso</h3>
+                    <img src="./img/espresso.png" alt="" width="300px" class="article_imgs">
+                    <p>Cada xícara é um grito de despertar, com aromas intensos que resgatam os sentidos e um sabor incomparável.
+                        Aliado perfeito para enfrentar desafios, um elixir de coragem em forma líquida.
+                    </p>
+                </article>
+                <article>
+                    <!-- <img src="./img/icons8-lemonade-96.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Lennon Lemonade</h3>
+                    <img src="./img/lemonade.png" alt="" width="300px" class="article_imgs">
+                    <p>Uma serenata cítrica que captura a essência do verão em cada gole. 
+                        Com o frescor do limão recém-espremido e a doçura equilibrada, é uma ode à liberdade e à alegria.
+                    </p>
+                </article>
+                <article>
+                    <!-- <img src="./img/icons8-coffee-cup-100.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Marx Mocha Supreme</h3>
+                    <img src="./img/mocha.png" alt="" width="300px" class="article_imgs">
+                    <p>Cada gole é um manifesto de indulgência, com camadas de cacau rico lutando com a força de um espresso vigoroso.
+                        A bebida ideal para os trabalhadores que buscam um doce triunfo na pausa do café.
+                    </p>
+                </article>
+                <article>
+                    <!-- <img src="./img/icons8-latte-64.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Lenin Latte</h3>
+                    <img src="./img/latte.png" alt="" width="300px" class="article_imgs">
+                    <p>Com sua espuma aveludada e o calor reconfortante do leite vaporizado, cada gole é um chamado para unir os amantes de café.
+                        É uma experiência que promove a camaradagem e lidera a vanguarda da luta diária.
+                    </p>
+                </article>
+                <article>
+                    <!-- <img src="./img/icons8-brew-100.png" alt="" width="45px" class="article_icons"> -->
+                    <h3>Bolchevique Brew</h3>
+                    <img src="./img/brew.png" alt="" width="300px" class="article_imgs">
+                    <p>Com grãos selecionados e uma torra intensa, cada xícara é um levante de sabor, forte e encorpado.
+                        Uma infusão audaciosa que desperta o espírito revolucionário.
+                    </p>
+                </article>
+            </div>
+        </section>
     </main>
 </body>
 <footer>
@@ -57,19 +115,19 @@
 <script>
     //Mundança das logos das redes sociais
     document.querySelector('.main_header_content_menu #img').addEventListener('mouseover', function() {
-        this.src = '/img/icons8-twitterx-ylw.png';
+        this.src = './img/icons8-twitterx-ylw.png';
     });
 
     document.querySelector('.main_header_content_menu #img').addEventListener('mouseout', function() {
-        this.src = '/img/icons8-twitterx-100.png';
+        this.src = './img/icons8-twitterx-100.png';
     });
 
     document.querySelector('.main_header_content_menu #img2').addEventListener('mouseover', function() {
-        this.src = '/img/icons8-instagram-ylw.png';
+        this.src = './img/icons8-instagram-ylw.png';
     });
 
     document.querySelector('.main_header_content_menu #img2').addEventListener('mouseout', function() {
-        this.src = '/img/icons8-instagram-100.png';
+        this.src = './img/icons8-instagram-100.png';
     });
 
     //Lógica do carrossel 

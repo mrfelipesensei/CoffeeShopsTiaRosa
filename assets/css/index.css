@@ -17,14 +17,14 @@
 }
 
 .main_header .main_header_content {
-    max-width: 1350px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .main_header .main_header_content .logo {
-    width: 85px;
+    width: 80px;
 }
 
 .main_header .main_header_content .main_header_content_menu {
@@ -48,7 +48,7 @@
 .main_header_content_menu ul li a{
     padding: 0 30px;
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     align-items: center;
     height: 100%;
     color:rgb(51, 49, 49);
@@ -56,7 +56,7 @@
 
 .main_header_content_menu ul li a:hover{
     color: #ffc62d;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: 1s;
 }
 
@@ -103,11 +103,44 @@
     right: 10px;
 }
 /*Fim 1ª Dobra*/
+/*Seção Meio*/
+#title{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: #cb9c1a;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+#title:hover{
+    font-size: 50px;
+}
+#title2{
+    text-align: center;
+    font-size: 30px;
+}
+.icons_meio{
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#title3{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 450;
+    color: #2d4059;
+}
+/*Bebidas*/
 .bebidas{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    background-color: #ddd;
+    padding-top: 20px;
 }
 .bebidas article{
     margin-left: 1px;
@@ -121,22 +154,23 @@
     border: 4px dashed #2d4059;
     border-radius: 15px;
     padding: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: center;
     cursor: pointer;
 }
 .bebidas h3{
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 5px;
     color: #2d4059;
-    padding-bottom: 5px;
     transition: 0.4s all;
 }
 .bebidas h3:hover{
-    font-size: 32px;
-    color: #2d4059;
+    font-size: 27px;
+    color: #ffc62d;
 }
 .bebidas p{
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 400;
 }
 .article_icons {
     margin: 0 auto; /* Centraliza os ícones horizontalmente */
@@ -150,4 +184,7 @@
 }
 .article_imgs:hover{
     width: 100%;
+}
+#brew{
+    margin-bottom: 5px;
 }

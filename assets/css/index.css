@@ -13,7 +13,6 @@
     width: 100%;
     background-color: white;
     font-weight: 500;
-    border-bottom: 3px solid #2d4059;
 }
 
 .main_header .main_header_content {
@@ -48,7 +47,7 @@
 .main_header_content_menu ul li a{
     padding: 0 30px;
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     align-items: center;
     height: 100%;
     color:rgb(51, 49, 49);
@@ -56,7 +55,7 @@
 
 .main_header_content_menu ul li a:hover{
     color: #ffc62d;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: 1s;
 }
 
@@ -73,7 +72,6 @@
     margin: auto;
     overflow: hidden;
     border: 2px solid #ddd;
-    border-radius: 10px;
 }
 .carousel img {
     width: 100%;
@@ -139,7 +137,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -152,7 +150,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 4px dashed #2d4059;
+    /* border: 4px dashed #2d4059; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 15px;
     padding: 10px;
     padding-bottom: 10px;
@@ -246,4 +245,63 @@
 #mapa_p2{
     padding-top: 10px;
     font-size: 20px;
+}
+/* Sobre */
+.sobre_container {
+    display: flex;
+    justify-content: space-between; /* Distribui as divs igualmente */
+    gap: 20px; /* Espaçamento entre as divs */
+    padding: 20px; /* Espaçamento interno do contêiner */
+}
+.sobre_container h3{
+    font-size: 40px;
+    text-align: center;
+    color: #2d4059;
+}
+.sobre_container p{
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+/* Estilo para as divs sobre e contato */
+.sobre, .contato {
+    flex: 1; 
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+.icons-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 15px; /* Espaçamento entre os ícones */
+    margin-bottom: 5px; /* Espaço inferior para separar dos parágrafos */
+    cursor: pointer;
+}
+#tshirt{
+    display: block; /* Permite centralizar com margin: auto; */
+    margin: auto; /* Centraliza horizontalmente */
+    padding-top: 5px;
+    width: 300px;
+    border-radius: 20px;
+}
+.contato button{
+    margin-top: 8px;
+    display: block; /* Garante que o botão ocupe toda a largura disponível */
+    margin-left: auto; 
+    margin-right: auto; 
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 5px;
+    background-color: #2d4059;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 35%;
+    transition: 0.4s all;
+}
+.contato button:hover{
+    padding: 7px;
+    width: 37%;
+    font-size: 21px;
 }

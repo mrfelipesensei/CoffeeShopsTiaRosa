@@ -261,6 +261,12 @@ a {
     font-size: 40px;
     text-align: center;
     color: #2d4059;
+    transition: 0.4s all; 
+    cursor: pointer;
+}
+.sobre_container h3:hover{
+    font-size: 43px;
+    color: #ffc62d;
 }
 .sobre_container p{
     padding-top: 10px;
@@ -312,4 +318,22 @@ a {
 #rosa{
     color: #ffc62d;
     cursor: pointer;
+}
+/* Botão Voltar ao Topo */
+#btnVoltarAoTopo {
+    display: none; /* Inicialmente esconde o botão */
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do botão até o rodapé */
+    right: 20px; /* Distância do botão até o lado direito */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#btnVoltarAoTopo:hover {
+    opacity: 0.8; /* Opacidade reduzida ao passar o mouse */
 }

@@ -19,10 +19,10 @@
             </a>
             <nav class="main_header_content_menu">
                 <ul>
-                    <li><a href="#">Bebidas</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#sobre">Contato</a></li>
                     <li>
                         <a href="#">
                             <img src="./img/icons8-twitterx-100.png" alt="" width="40px" id="img">
@@ -62,7 +62,7 @@
             </header>
             <br>
             <!-- Bebidas -->
-            <div class="bebidas">
+            <div class="bebidas" id="bebidas">
                 <article>
                     <!-- <img src="./img/icons8-iced-coffee-100.png" alt="" width="45px" class="article_icons"> -->
                     <h3 id="playButton">Revolution Ice Tea</h3>
@@ -123,15 +123,16 @@
                 <img src="./img/xicara.jpg" alt="" width="200px">
             </div>
             <!-- Mapa -->
-            <div class="mapa">
+            <div class="mapa" id="localizacao">
 				<h3 id="title_mapa">Localização</h4>
 				<p id="mapa_p">Nosso estabelecimento está dentro do comércio local:</p>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959.5748551970435!2d-48.115689170762316!3d-15.840852709139403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDUwJzI3LjEiUyA0OMKwMDYnNTQuNSJX!5e0!3m2!1spt-BR!2sbr!4v1635794167119!5m2!1spt-BR!2sbr" width="50%" height="450px" style="border:0;" allowfullscreen=""></iframe>
 				<p id="mapa_p2">Venha nos visitar a comprovar a qualidade de nossos serviços e produtos!</p>
 			</div>
             <br>
+            <button onclick="scrollToTop()" id="btnVoltarAoTopo">Voltar ao Topo</button>
             <!-- Sobre -->
-            <div class="sobre_container">
+            <div class="sobre_container" id="sobre">
                 <div class="sobre">
                     <h3>Sobre Nós</h1>
                     <p>No <span style="color: #ffc62d;">Tia Rosa Coffee Shops</span>, acreditamos que cada detalhe importa. 
@@ -257,4 +258,25 @@
         this.src = './img/icons8-instagram-100.png';
     });
 
+    // Seleciona o botão de voltar ao topo
+        var btnVoltarAoTopo = document.getElementById('btnVoltarAoTopo');
+
+        // Adiciona um evento de scroll para mostrar ou ocultar o botão
+        window.addEventListener('scroll', function() {
+            // Mostra o botão quando a rolagem for maior que 1500px do topo
+            if (window.pageYOffset > 2000) {
+                btnVoltarAoTopo.style.display = 'block';
+            } else {
+                btnVoltarAoTopo.style.display = 'none';
+            }
+        });
+
+        // Função para rolar suavemente até o topo da página
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Rola suavemente
+            });
+        }
+        
 </script>

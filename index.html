@@ -65,7 +65,8 @@
             <div class="bebidas">
                 <article>
                     <!-- <img src="./img/icons8-iced-coffee-100.png" alt="" width="45px" class="article_icons"> -->
-                    <h3>Revolution Ice Tea</h3>
+                    <h3 id="playButton">Revolution Ice Tea</h3>
+                    <audio id="audio" src="./assets/music/revolution.mp3"></audio>
                     <img src="./img/revolution.png" alt="" width="300px" class="article_imgs">
                     <p> 
                         Uma mistura revolucionária de chá preto orgânico, raspas de limão fresco e uma pitada de hortelã. 
@@ -165,4 +166,18 @@
     }
 
     setInterval(nextSlide, 5000); // Mude o slide a cada 5 segundos
+
+    //Easter egg
+    document.addEventListener('DOMContentLoaded', function () {
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+
+        playButton.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        })
+    })
 </script>

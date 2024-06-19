@@ -189,6 +189,26 @@
 #brew{
     margin-bottom: 5px;
 }
+/*Imagens Meio*/
+.logo_meio {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento entre as colunas */
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura da página */
+    margin-bottom: -20px;
+}
+.logo_meio img {
+    width: 100%; /* Garante que as imagens ocupem 100% da largura da coluna */
+    height: auto; /* Mantém a proporção das imagens */
+    object-fit: cover; /* Garante que as imagens se ajustem ao contêiner */
+}
+#beans{
+    padding-top: 100px;
+}
+#logo_meio{
+    border-radius: 10px;
+}
 /*Mapa*/
 .mapa {
     margin-top: 20px;

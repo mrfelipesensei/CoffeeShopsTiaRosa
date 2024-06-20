@@ -337,3 +337,24 @@ a {
 #btnVoltarAoTopo:hover {
     opacity: 0.8; /* Opacidade reduzida ao passar o mouse */
 }
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}

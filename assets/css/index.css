@@ -358,3 +358,67 @@ footer {
     margin: 5px 0;
     font-size: 14px;
 }
+
+/* Media Query para telas pequenas */
+@media (max-width: 761px) {
+    .main_header_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main_header_content .logo {
+        margin-bottom: 10px; /* Espaço entre a logo e o menu */
+    }
+
+    .main_header_content_menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main_header_content_menu ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_header_content_menu ul li a {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .bebidas {
+        grid-template-columns: 1fr;
+    }
+
+    .bebidas img{
+        width: 60%;
+    }
+    .bebidas p{
+        width: 50%;
+        font-size: larger;
+    }
+    .carousel img {
+        height: auto; /* Ajusta a altura da imagem para manter a proporção */
+    }
+
+    .carousel .arrow {
+        top: 40%;
+    }
+
+    .mapa {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sobre_container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icons-container {
+        gap: 5px;
+    }
+}

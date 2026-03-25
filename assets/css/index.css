@@ -367,32 +367,86 @@ footer {
 
 /* Media Query para telas pequenas */
 @media (max-width: 761px) {
-    .main_header_content {
+    .hamburguer-menu {
         display: flex;
+    }
+
+    .main_header .main_header_content {
+        position: relative;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
+
     .main_header_content .logo {
         margin-bottom: 10px; /* Espaço entre a logo e o menu */
+        width: 80px;
+        align-self: flex-start;
     }
 
     .main_header_content_menu {
-        width: 100%;
-        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 99;
+        padding-top: 80px;
+        justify-content: flex-start !important;
     }
 
+    .main_header_content_menu.active {
+        left: 0;
+    }
+
+
     .main_header_content_menu ul {
-        width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main_header_content_menu ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
     }
 
     .main_header_content_menu ul li a {
-        font-size: 25px;
-        padding: 10px 0;
+        font-size: 1.2rem;
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+    }
+
+    .main_header_content_menu ul li a:hover {
+        font-size: 1.3rem;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 98;
+        display: none;
+    }
+
+    .menu-overlay.active {
+        display: block;
+    }
+
+    .main_header_content_menu ul li:last-child img,
+    .main_header_content_menu ul li:nth-last-child(2) img {
+        width: 30px;
     }
 
     .bebidas {
@@ -438,4 +492,40 @@ footer {
     .icons-container {
         gap: 5px;
     }
+}
+
+
+/*Estilos do menu hamburguer*/
+.hamburguer-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    z-index: 100;
+}
+
+.hamburguer-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(51, 49, 49);
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/*Animação do hamburguer para X*/
+.hamburguer-menu.active .hamburguer-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+
+.hamburguer-menu.active .hamburguer-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer-menu.active .hamburguer-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px);
 }

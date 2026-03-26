@@ -403,6 +403,22 @@ footer {
     }
 }
 
+@media (max-width: 866px) {
+    .main_header .main_header_content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main_header .main_header_content .logo {
+        margin: 10px auto;
+        display: block;
+        align-self: center;
+    }
+}
+
+
 /* Media Query para telas pequenas */
 @media (max-width: 761px) {
     .hamburguer-menu {

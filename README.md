@@ -32,5 +32,15 @@ Uma interface **Front-End** moderna e imersiva desenvolvida para uma cafeteria f
 ## 🚀 Como Usar
 
 1. **Clone o repositório:**
-   ```bash
+```bash
    git clone [https://github.com/mrfelipesensei/CoffeeShopsTiaRosa](https://github.com/mrfelipesensei/CoffeeShopsTiaRosa)
+```
+2. **Acesse a pasta do projeto:**
+```bash
+cd CoffeShopsTiaRosa
+```
+3. **Execute a aplicação:**
+Basta abrir o arquivo `index.html` em qualquer navegador moderno.
+
+---
+Desenvolvido por **Felipe Oliveira** - Full-Stack Development.

@@ -3,6 +3,14 @@
 
 Uma interface **Front-End** moderna e imersiva desenvolvida para uma cafeteria fictícia. O projeto combina conceitos avançados de **Design Responsivo**, **Semântica HTML5** e **Interatividade com JavaScript**, unindo uma experiência de usuário fluida e uma narrativa visual inspirada na cultura pop e em figuras históricas.
 
+## 📱 Demonstração do Projeto
+
+Abaixo, você pode conferir a fluidez da interface e a adaptação total do layout (Design Responsivo) em diferentes resoluções de tela, do Desktop ao Mobile.
+
+![Demonstração da Responsividade do Site](./img/demo_responsividade.gif)
+
+---
+
 ## ⚙️ Funcionalidades
 
 * **Arquitetura Adaptável:** Design totalmente responsivo utilizando **Media Queries**, garantindo fidelidade visual em dispositivos Mobile, Tablet e Desktop.
